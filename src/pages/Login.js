@@ -14,7 +14,7 @@ function Login() {
     try {
       toast.loading("Loading...");
       const response = await axios.post(
-        "http://localhost:3110/api/auth/login",
+        "https://deployment-practicee.herokuapp.com/api/auth/login",
         userObj
       );
       toast.dismiss();
@@ -64,9 +64,6 @@ function Login() {
               <Link className="underline text-primary" to="/register">
                 Click Here To Register
               </Link>
-              <h1 className="underline text-primary cursor-pointer">
-                Forgot Password
-              </h1>
             </div>
           </div>
         </div>

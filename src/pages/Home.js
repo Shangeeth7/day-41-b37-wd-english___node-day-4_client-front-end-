@@ -10,7 +10,7 @@ function Home() {
     try {
       const token = localStorage.getItem("user");
       const response = await axios.get(
-        "http://localhost:3110/api/user/get-user-info",
+        "https://deployment-practicee.herokuapp.com/api/user/get-user-info",
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -23,7 +23,7 @@ function Register() {
         try {
           toast.loading("Loading...");
           const response = await axios.post(
-            "http://localhost:3110/api/auth/register",
+            "https://deployment-practicee.herokuapp.com/api/auth/register",
             userObj
           );
           toast.dismiss();
